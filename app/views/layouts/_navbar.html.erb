@@ -1,0 +1,18 @@
+<div class= "nav-wrapper">
+<% if current_user %>
+  <%= link_to "Home", root_path, class:"btn deep-purple accent-2" %>
+  <%= link_to "Hobbies", hobbies_path, class:"btn deep-purple accent-2" %>
+  <div class="right">
+    Logged In |
+    <%= link_to "Edit User", edit_user_registration_path, class: "btn deep-purple accent-2"%>
+    <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"btn red"%>
+  </div>
+<% else %>
+  <%= link_to "Home", root_path, class:"btn deep-purple accent-2" %>
+  <div class="right">
+    <%= link_to 'Sign Up', new_user_registration_path, class: "btn blue darken-4" %>
+    or
+    <%= link_to 'Log In', new_user_session_path, class: "btn blue darken-4" %>
+  </div>
+<% end %>
+</div>

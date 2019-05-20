@@ -1,0 +1,8 @@
+<%= form_with(model: hobby, local: true) do |f| %>
+  <div class= "field">
+    <%= f.text_field :name, required: true, autofocus: true, placeholder: "Hobby Name" %>
+  </div>
+  <div class= "action">
+    <%= f.submit "Submit", class: "btn" %>
+  </div>
+<% end %>

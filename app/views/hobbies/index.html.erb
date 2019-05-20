@@ -1,0 +1,15 @@
+<h1><%= current_user.full_name %>'s Hobbies</h1>
+<hr>
+<h5> Add your hobbies: <%= link_to "New Hobby", new_hobby_path, class:"btn green"%> </h5>
+
+<ul>
+  <% current_user.hobbies.each do |h| %>
+    <hr>
+    <li><h3><%= h.name %></h3></li>
+    <%= link_to "Edit", edit_hobby_path(h), class:"btn blue" %>
+    |
+    <%= link_to "Delete", hobby_path(h), method: :delete, class:"btn red" %>
+    <hr>
+  <% end %>
+</ul>
+

@@ -1,0 +1,18 @@
+@import 'materialize';
+@import "flash";
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
+.btn, .nav-wrapper {
+  font-family: Righteous, 'Times New Roman', Times, serif;
+  color:black;
+}
+
+body {
+  font-family: Kalam, 'Times New Roman', Times, serif;
+  color: #fff607;
+  background: #9CECFB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
