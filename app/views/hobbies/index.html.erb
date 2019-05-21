@@ -6,9 +6,9 @@
   <% current_user.hobbies.each do |h| %>
     <hr>
     <li><h3><%= h.name %></h3></li>
-    <%= link_to "Edit", edit_hobby_path(h), class:"btn blue" %>
+    <%= link_to "Edit", edit_hobby_path(h), class:"btn deep-purple accent-2" %>
     |
-    <%= link_to "Delete", hobby_path(h), method: :delete, class:"btn red" %>
+    <%= link_to "Delete", hobby_path(h), method: :delete, class:"btn blue" %>
     <hr>
   <% end %>
 </ul>
